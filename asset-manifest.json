@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cfcc81a9.chunk.css",
+    "main.js": "/static/js/main.d6ef44d0.chunk.js",
+    "main.js.map": "/static/js/main.d6ef44d0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f8c5b4be.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f8c5b4be.js.map",
+    "static/js/2.e6e22395.chunk.js": "/static/js/2.e6e22395.chunk.js",
+    "static/js/2.e6e22395.chunk.js.map": "/static/js/2.e6e22395.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cf4e91727b78bef090e1f4172b32dca4.js": "/precache-manifest.cf4e91727b78bef090e1f4172b32dca4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.cfcc81a9.chunk.css.map": "/static/css/main.cfcc81a9.chunk.css.map",
+    "static/js/2.e6e22395.chunk.js.LICENSE.txt": "/static/js/2.e6e22395.chunk.js.LICENSE.txt",
+    "static/media/back.png": "/static/media/back.b081ab70.png",
+    "static/media/App.css": "/static/media/wantedPapper.f5dff6ed.png",
+    "static/media/down.png": "/static/media/down.75b4abce.png",
+    "static/media/front.png": "/static/media/front.c322e6fd.png",
+    "static/media/gras4.jfif": "/static/media/gras4.80361a6e.jfif",
+    "static/media/left.png": "/static/media/left.8c154b9b.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/right.png": "/static/media/right.9a9b7fd3.png",
+    "static/media/up.png": "/static/media/up.5ec9bc7e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8c5b4be.js",
+    "static/js/2.e6e22395.chunk.js",
+    "static/css/main.cfcc81a9.chunk.css",
+    "static/js/main.d6ef44d0.chunk.js"
+  ]
+}
