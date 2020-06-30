@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff6d6d;
+    letter-spacing: 3px;
+}
+h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 33px;
+    letter-spacing: 1px;
+}
+h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    letter-spacing: 0.4px;
+}
+h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #ff6d6d;
+}
+header {
+    width: 100%;
+    height: 813px;
+    background-image: url(image/Rectangle20.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#head-element {
+    width: 50%;
+    margin: auto;
+    padding-top: 213px;
+}
+#head-title {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#head-button button {
+    display: block;
+    background-image: url(image/Ellipse2.png);
+    border-radius: 50%;
+    border: none;
+    width: 59px;
+    height: 59px;
+    margin: 35px auto;
+}
+#head-element a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 3px;
+}
+#head-element a>p {
+    background-image: url(image/RoundedRectangle1.png);
+    text-align: center;
+    width: 190px;
+    height: 34px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+#head-text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding-top: 16px;
+}
+#description {
+    float: left;
+    width: 65%;
+    height: 724px;
+}
+#description-text {
+    width: 56%;
+    margin: auto;
+    padding-top: 18%;
+}
+span {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ff6d6d;
+    letter-spacing: 3px;
+}
+.paragraph-content {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #b3b3b3;
+    line-height: 26px;
+    padding-bottom: 25px;
+    letter-spacing: 0.4px;
+}
+#part-section {
+    float: right;
+    width: 35%;
+    height: 724px;
+    background-image: url(image/Rectangle22.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clear-float {
+    clear: both;
+}
+#section-two {
+    height: 700px;
+    background-image: url(image/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section-two-title {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+#section-two-content {
+    width: 1170px;
+    margin: auto;
+}
+.content-card {
+    width: 350px;
+    text-align: center;
+    float: left;
+    padding-right: 40px;
+}
+.content-card img {
+    padding-bottom: 20px;
+}
+#section-describe {
+    background-image: url(image/Rectangle21.png);
+    background-size: 40%;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 547px;
+}
+#section-describe-content {
+    width: 1200px;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#section-describe img {
+    float: left;
+    /*padding: 90px 50px;*/
+}
+#section-describe-description {
+    float: left;
+    width: 500px;
+    padding-left: 50px;
+}
+#section-describe-description-text {
+    padding-top: 45px;
+}
+#section-describe-description-text h3 {
+    padding-bottom: 10px;
+}
+#clients-section {
+    background-image: url(image/BGsection.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 648px;*/
+    height: auto;
+}
+#clients-list {
+    width: 75%;
+    margin: auto;
+}
+.clients-list-card {
+    width: 350px;
+    text-align: center;
+    float: left;
+    padding-top: 110px;
+}
+.clients-list-card img {
+    padding-bottom: 15px;
+}
+.clients-list-card p {
+    font-style: italic;
+    padding-top: 15px;
+}
+.clients-list-card h4 {
+    color: white;
+    padding-bottom: 5px;
+}
+.line-content-clients {
+    float: left;
+    width: 40px;
+}
+#clients-logo-list {
+	/*display: none;*/
+    width: 70%;
+    margin: auto;
+}
+#clients-logo-list ul {
+    list-style: none;
+    padding-top: 60px;
+    padding-bottom: 160px;
+}
+#clients-logo-list li {
+    float: left;
+    padding-right: 90px;
+}
+#section-browser{
+	background-image: url(image/Rectangle23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 648px;*/
+
+}
+#section-browser-title{
+	text-align: center;
+	width: 42%;
+	margin: auto;
+	padding-top: 90px;
+	padding-bottom: 60px;
+}
+#image-browser{
+	background-image: url(image/Rectangle24.png);
+    background-repeat: no-repeat;
+    width: 820px;
+    height: 375px;
+    margin: auto;
+
+}

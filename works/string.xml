@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<container>
+<site>
+	<data-url>AliSayed/index.html</data-url>
+	<image-preview-src>AliSayed/Ali_Sayed’s.png</image-preview-src>
+	<title>Ali Sayed’s</title>
+</site>
+
+<site>
+	<data-url>SinglePageWebsite/index.html</data-url>
+	<image-preview-src>SinglePageWebsite/single_page.png</image-preview-src>
+	<title>Single Page</title>
+</site>
+
+<site>
+	<data-url>Travel/index.html</data-url>
+	<image-preview-src>Travel/travel.png</image-preview-src>
+	<title>Travel</title>
+</site>
+
+<site>
+	<data-url>SiteOnBootstrap/index.html</data-url>
+	<image-preview-src>SiteOnBootstrap/Untitled-1.png</image-preview-src>
+	<title>Travel</title>
+</site>
+
+<site>
+	<data-url>corporate-landing/index.html</data-url>
+	<image-preview-src>corporate-landing/Untitled-1.png</image-preview-src>
+	<title>Travel</title>
+</site>
+
+<site>
+	<data-url>alexis/index.html</data-url>
+	<image-preview-src>alexis/Untitled-1.png</image-preview-src>
+	<title>Travel</title>
+</site>
+
+</container>

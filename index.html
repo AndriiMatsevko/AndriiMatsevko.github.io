@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio by Andrii</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="loadingPage.css">
+	<script src="scripts/three.min.js"></script>
+</head>
+
+<body>
+
+	<div id="loading-block">
+		<div id="starsContainer">
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		</div>
+		<div id="logoContainer">
+			<div id="wheelCircle"></div>
+			<div id="logoImg"></div>
+			<div id="wheelCircle"></div>
+		</div>
+
+		<div id="loadingContainer">
+			<div id="loadingText"></div>
+			<div id="barContainer">
+				<span id="bar" style="width: 0%"></span>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+
+		<div id="layer-content">
+
+			<div class="close-button"></div>
+
+			<div id="title">
+				<h2>PERSONAL INFORMATION</h2>
+			</div>
+			<div id="nav">
+				<button class="tablink activeButton" onclick="openCity(event,'about-me')">ABOUT ME</button>
+				<button class="tablink" onclick="openCity(event,'technical-skills')">TECHNICAL SKILLS</button>
+				<button class="tablink" onclick="openCity(event,'soft-skills')">SOFT-SKILLS</button>
+				<button class="tablink" onclick="openCity(event,'language-skills')">FOREIGN LANGUAGES</button>
+			</div>
+
+			<div id="about-me" class="block">
+
+				<div id="image-block">
+					<h2>Andrii Matsevko</h2>
+					<img src="https://cv-photos-original.rabota.ua/cdn-cgi/image/w=200,h=400/" alt="">
+					<h2>Trainee/Junior Front-end developer</h2>
+				</div>
+				<div id="info-content">
+					<div id="contact-block">
+						<h3>Contact Information</h3>
+						<hr>
+						<table>
+							<tr>
+								<td>City:</td>
+								<td>Yavoriv</td>
+							</tr>
+							<tr>
+								<td>Country:</td>
+								<td>Ukraine</td>
+							</tr>
+							<tr>
+								<td>Phone number:</td>
+								<td>+38 (097) 583-50-67</td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td>andriyleern@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Skype:</td>
+								<td>andriy123453</td>
+							</tr>
+						</table>
+					</div>
+					<div id="education-block">
+						<h3>Education</h3>
+						<hr>
+						<h4>Odessa national Academy of telecommunications n.a. O. S. Popov</h4>
+						<p>Software engineering. <span>Bachelor Degree</span></p>
+						<h4>Lviv College of the State University of Telecommunications</h4>
+						<p>Computer Engineering/Maintenance of computer systems and networks. <span>Associate Degree</span></p>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div id="technical-skills" class="block">
+				<div id="technical-skills-content">
+					<div id="front">
+						<h3>Frontend</h3>
+						<hr>
+						<ul class="skills-list">
+							<li>
+								<p>HTML5</p>
+								<div id="html5" class="progress">
+									<div class="fill"></div>
+									<div class="number">70%</div>
+								</div>
+							</li>
+							<li>
+								<p>CSS3</p>
+								<div id="css3" class="progress">
+									<div class="fill"></div>
+									<div class="number">50%</div>
+								</div>
+							</li>
+							<li>
+								<p>JavaScript</p>
+								<div id="js" class="progress">
+									<div class="fill"></div>
+									<div class="number">30%</div>
+								</div>
+							</li>
+							<li>
+								<p>JQuery</p>
+								<div id="jquery" class="progress">
+									<div class="fill"></div>
+									<div class="number">20%</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="back">
+						<h3>Backend</h3>
+						<hr>
+						<ul class="skills-list">
+							<li>
+								<p>Java Core</p>
+								<div id="java" class="progress">
+									<div class="fill"></div>
+									<div class="number">70%</div>
+								</div>
+							</li>
+							<li>
+								<p>Python</p>
+								<div id="python" class="progress">
+									<div class="fill"></div>
+									<div class="number">15%</div>
+								</div>
+							</li>
+							<li>
+								<p>SQL</p>
+								<div id="sql" class="progress">
+									<div class="fill"></div>
+									<div class="number">30%</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="other">
+						<h3>Other</h3>
+						<hr>
+							<ul class="skills-list">
+							<li>
+								<p>Adobe Photoshop</p>
+								<div id="Photoshop" class="progress">
+									<div class="fill"></div>
+									<div class="number">30%</div>
+								</div>
+							</li>
+							<li>
+								<p>Git</p>
+								<div id="Git" class="progress">
+									<div class="fill"></div>
+									<div class="number">40%</div>
+								</div>
+							</li>
+<!-- 							<li>
+								<p>SQL</p>
+								<div id="sql" class="progress">
+									<div class="fill"></div>
+									<div class="number">40%</div>
+								</div>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="soft-skills" class="block">
+				<div id="soft-skills-content">
+					<div id="soft-skills-wheel">
+						<canvas id="myCanvas" width="300" height="300">
+							Ваш браузер не поддерживает Canvas
+						</canvas>
+						<p>Acting as a <br>team player</p>
+						<p>Flexibility</p>
+						<p>Effective <br>communication</p>
+						<p>Problem-solving <br>and resourcefulness</p>
+						<p>Accepting <br>feedback</p>
+						<p>Planning</p>
+						<p>Creative<br> thinking</p>
+						<p>Fast learner</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="language-skills" class="block">
+				<div id="language-skills-content">
+						<div class="cont">
+						<span></span>
+						<div class="itemLangName">Elementary</div>
+						<div class="itemLangName">Intermediate</div>
+						<div class="itemLangName">Advanced</div>
+						<div class="itemLangName">Native</div>
+					</div>
+
+					<div class="cont">
+						<span>Ukraine</span>
+						<div class="itemLang"></div>
+						<div class="itemLang"></div>
+						<div class="itemLang"></div>
+						<div class="itemLang itemActive"></div>
+					</div>
+					<div class="cont">
+						<span>English</span>
+						<div class="itemLang"></div>
+						<div class="itemLang itemActive"></div>
+						<div class="itemLang"></div>
+						<div class="itemLang"></div>
+					</div>
+					<div class="cont">
+						<span>Russian</span>
+						<div class="itemLang"></div>
+						<div class="itemLang"></div>
+						<div class="itemLang itemActive"></div>
+						<div class="itemLang"></div>
+					</div>
+					<div class="cont">
+						<span>Polish</span>
+						<div class="itemLang itemActive"></div>
+						<div class="itemLang"></div>
+						<div class="itemLang"></div>
+						<div class="itemLang"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- <div id="light-shock"></div> -->
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="wheelSoftSkills.js"></script>
+	<script type="module" src="scene.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+var sakureMap = new THREE.TextureLoader().load( 'objects/sakuraTree/stage17_sakuraleaf01c.png' );
+        // var sakureTr = new THREE.TextureLoader().load( 'objects/sakuraTree/stage17_sakuraleaf01q.png' );
+
+loader.load( 'objects/sakuraTree/sakuraTreeS1.fbx', function ( object ) {
+
+          object.scale.set(100,100,70);
+          object.position.set(100, -500, -1000);
+          // object.rotation.set(0, -20, 0);
+
+          //for animation --------------
+          // mixer = new THREE.AnimationMixer( object );
+          // var action = mixer.clipAction( object.animations[ 0 ] );
+          // action.play();
+          //---------
+
+          object.traverse( function ( child ) {
+
+            if(child.name=='stage17_sakuraleaf02_0' || child.name=='stage17_sakuraleaf01_0'){
+            
+            child.material = new THREE.MeshLambertMaterial( {  
+              color: '#FF80FF',
+              map: sakureMap,
+              emissive: 0,
+              lightMap: sakureMap,
+              // envMap: sakureMap,
+              reflectivity: 0.56,
+              refractionRatio: 0.98,
+              combine: 0,
+              side: 2,
+              transparent: true,
+              depthFunc: 3,
+              depthTest: true,
+              depthWrite: true,
+              stencilWrite: false,
+              stencilWriteMask: 255,
+              stencilFunc: 519,
+              stencilRef: 0,
+              stencilFuncMask: 255,
+              stencilFail: 7680,
+              stencilZFail: 7680,
+              stencilZPass: 7680,
+              alphaTest: 0.66      
+              } );
+           
+          }
+
+            if ( child.isMesh ) {
+              
+
+            
+
+              child.castShadow = true;
+              child.receiveShadow = false;
+              child.flatshading = true;
+              // child.rotation.set(0, -20, 0);
+            }} );
+          scene.add( object );} );

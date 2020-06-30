@@ -1,0 +1,59 @@
+var bushMap = new THREE.TextureLoader().load( 'objects/bush/street_zhiwu01.png' );
+        // var sakureTr = new THREE.TextureLoader().load( 'objects/sakuraTree/stage17_sakuraleaf01q.png' );
+
+        
+        loader.load( 'objects/bush/bush2.fbx', function ( object ) {
+
+          object.scale.set(100,100,100);
+          object.position.set(0, 0, 0);//
+          // object.rotation.set(0, -20, 0);
+
+          //for animation --------------
+          // mixer = new THREE.AnimationMixer( object );
+          // var action = mixer.clipAction( object.animations[ 0 ] );
+          // action.play();
+          //---------
+
+          object.traverse( function ( child ) {
+
+            if(child.name=='street_zhiwu04'){
+            
+            child.material = new THREE.MeshLambertMaterial( {  
+              color: '#B5F7A4',
+              map: bushMap,
+              emissive: 0,
+              // lightMap: bushMap,
+              envMap: bushMap,
+              reflectivity: 0.30,
+              refractionRatio: 0.98,
+              combine: 0,
+              side: 2,
+              transparent: true,
+              depthFunc: 3,
+              depthTest: true,
+              depthWrite: true,
+              stencilWrite: false,
+              stencilWriteMask: 255,
+              stencilFunc: 519,
+              stencilRef: 0,
+              stencilFuncMask: 255,
+              stencilFail: 7680,
+              stencilZFail: 7680,
+              stencilZPass: 7680,
+              alphaTest: 0.26      
+              } );
+           
+          }
+
+            if ( child.isMesh ) {
+              
+
+            
+
+              child.castShadow = true;
+              child.receiveShadow = false;
+              child.flatshading = true;
+              child.position.set(0, 0, 0);
+              // child.rotation.set(0, -20, 0);
+            }} );
+          scene.add( object );} );
