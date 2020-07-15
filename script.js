@@ -33,7 +33,7 @@ move();
 function move() {
   var elem = document.getElementById("bar");
   var width = 1;
-  var id = setInterval(frame, 30);
+  var id = setInterval(frame, 50);
   function frame() {
     if (width >= 100) {
       clearInterval(id);
